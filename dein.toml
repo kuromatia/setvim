@@ -1,0 +1,10 @@
+[[plugins]]
+repo = 'cohama/lexima.vim'
+
+[[plugins]]
+repo = 'tomasr/molokai'
+
+
+
+
+
