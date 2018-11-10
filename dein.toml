@@ -1,8 +1,12 @@
 [[plugins]]
 repo = 'cohama/lexima.vim'
 
-[[plugins]]
+[[plugins]] 
 repo = 'tomasr/molokai'
+
+[[plugins]] 
+repo = 'Shougo/unite.vim'
+
 
 
 

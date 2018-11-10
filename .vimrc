@@ -1,8 +1,8 @@
 set number
 set noswapfile
 
-nnoremap <C-e> :w <CR> :!python3 % <CR>
-inoremap <C-e> <Esc> :w <CR> :!python3 % <CR> 
+nnoremap <C-e> :w <CR> :!python % <CR>
+inoremap <C-e> <Esc> :w <CR> :!python % <CR> 
 inoremap <C-z> <Esc> u
 nnoremap <C-z> <Esc> u 
 inoremap <C-y> <Esc> yiw
@@ -60,3 +60,4 @@ endif
 
 "End dein Scripts-------------------------
 colorscheme molokai
+nnoremap <C-u> :Unite file <CR>
