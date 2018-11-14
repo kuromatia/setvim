@@ -1,23 +1,3 @@
-set number
-set noswapfile
-
-nnoremap <C-e> :w <CR> :!python % <CR>
-inoremap <C-e> <Esc> :w <CR> :!python % <CR> 
-inoremap <C-z> <Esc> u
-nnoremap <C-z> <Esc> u 
-inoremap <C-y> <Esc> yiw
-nnoremap <C-y> yiw
-inoremap <C-w> <Esc> :w <CR>
-nnoremap <C-w> <Esc> :w <CR> 
-imap <C-t> <Esc>
-
-imap <c-h> <Left>
-imap <c-j> <Down>
-imap <c-k> <Up>
-imap <c-l> <Right>
-
-
-
 "dein Scripts-----------------------------
 if &compatible
   set nocompatible               " Be iMproved
@@ -61,3 +41,38 @@ endif
 "End dein Scripts-------------------------
 colorscheme molokai
 nnoremap <C-u> :Unite file <CR>
+
+"base
+set number
+set noswapfile
+set cursorline
+set cursorcolumn
+set virtualedit=onemore
+set showmatch
+set autoindent
+set smartindent
+set tabstop=4
+set shiftwidth=4
+
+"for python
+nnoremap <C-e> :w <CR> :!python %
+inoremap <C-e> <Esc> :w <CR> :!python %
+
+"key binds
+inoremap <C-z> <Esc> u
+nnoremap <C-z> <Esc> u 
+inoremap <C-y> <Esc> yiw
+nnoremap <C-y> yiw
+inoremap <C-w> <Esc> :w <CR>
+nnoremap <C-w> <Esc> :w <CR> 
+imap <C-t> <Esc>
+
+"move
+imap <c-h> <Left>
+imap <c-j> <Down>
+imap <c-k> <Up>
+imap <c-l> <Right>
+
+
+
+
