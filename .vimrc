@@ -43,13 +43,12 @@ endif
 let g:syntastic_python_checkers=["flake8"]
 
 colorscheme molokai
-nnoremap <C-u> :Unite file <CR>
+nnoremap <C-u> :Unite file buffer<CR>
 
 "base
 set number
 set noswapfile
 set cursorline
-set cursorcolumn
 set virtualedit=onemore
 set showmatch
 set autoindent
