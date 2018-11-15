@@ -39,6 +39,9 @@ if dein#check_install()
 endif
 
 "End dein Scripts-------------------------
+
+let g:syntastic_python_checkers=["flake8"]
+
 colorscheme molokai
 nnoremap <C-u> :Unite file <CR>
 
@@ -63,9 +66,8 @@ inoremap <C-z> <Esc> u
 nnoremap <C-z> <Esc> u 
 inoremap <C-y> <Esc> yiw
 nnoremap <C-y> yiw
-inoremap <C-w> <Esc> :w <CR>
-nnoremap <C-w> <Esc> :w <CR> 
-imap <C-t> <Esc>
+inoremap <C-t> <Esc> :w <CR>
+nnoremap <C-t> <Esc> :w <CR>
 
 "move
 imap <c-h> <Left>
