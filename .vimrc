@@ -53,12 +53,14 @@ set virtualedit=onemore
 set showmatch
 set autoindent
 set smartindent
+set expandtab
 set tabstop=4
 set shiftwidth=4
-
+set backspace=indent,eol,start
 "for python
 nnoremap <C-e> :w <CR> :!python %
 inoremap <C-e> <Esc> :w <CR> :!python %
+nmap <F12> :!python -m pdb %
 
 "key binds
 inoremap <C-z> <Esc> u
@@ -67,12 +69,19 @@ inoremap <C-y> <Esc> yiw
 nnoremap <C-y> yiw
 inoremap <C-t> <Esc> :w <CR>
 nnoremap <C-t> <Esc> :w <CR>
-
+noremap! <C-?> <C-h>
 "move
-imap <c-h> <Left>
+noremap <S-h> ^
+noremap <S-j> }
+noremap <S-k> {
+noremap <S-l> $
+"inoremap <S-h> ^
+"inoremap <S-j> }
+"inoremap <S-k> {
+"inoremap <S-l> $
+"imap <c-h> <Left>
 imap <c-j> <Down>
 imap <c-k> <Up>
 imap <c-l> <Right>
-
 
 au BufRead,BufNewFile *.py so ~/setvim/set_python/python.vim
