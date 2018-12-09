@@ -79,7 +79,8 @@ noremap <S-l> $
 "inoremap <S-j> }
 "inoremap <S-k> {
 "inoremap <S-l> $
-"imap <c-h> <Left>
+inoremap <c-g> <Esc>
+imap <c-h> <Left>
 imap <c-j> <Down>
 imap <c-k> <Up>
 imap <c-l> <Right>
