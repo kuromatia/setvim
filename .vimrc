@@ -70,6 +70,7 @@ nnoremap <C-y> yiw
 inoremap <C-t> <Esc> :w <CR>
 nnoremap <C-t> <Esc> :w <CR>
 noremap! <C-?> <C-h>
+noremap <BS> <delete>
 "move
 noremap <S-h> ^
 noremap <S-j> }
@@ -80,9 +81,8 @@ noremap <S-l> $
 "inoremap <S-k> {
 "inoremap <S-l> $
 inoremap <c-g> <Esc>
-imap <c-h> <Left>
-imap <c-j> <Down>
-imap <c-k> <Up>
-imap <c-l> <Right>
-
+"imap <c-h> <Left>
+"imap <c-j> <Down>
+"imap <c-k> <Up>
+"imap <c-l> <Right>
 au BufRead,BufNewFile *.py so ~/setvim/set_python/python.vim
