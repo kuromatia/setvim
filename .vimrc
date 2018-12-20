@@ -86,3 +86,4 @@ inoremap <c-g> <Esc>
 "imap <c-k> <Up>
 "imap <c-l> <Right>
 au BufRead,BufNewFile *.py so ~/setvim/set_python/python.vim
+
